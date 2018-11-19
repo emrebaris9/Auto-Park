@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parkk"
+    android:weightSum="1">
+    <TextView android:id="@+id/title_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Eşleştirilmiş cihazlardan btSerial cihazını seçin:"
+        android:visibility="gone"
+        android:textColorLink="#FFFDE7"
+        android:background="#666"
+        android:textColor="#4CAF50"
+        android:paddingLeft="5dp"
+    />
+    <ListView
+
+        android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:stackFromBottom="false"
+
+        android:layout_weight="1.01" />
+
+    <TextView
+        android:text="          MyM"
+        android:textColor="#FFEB3B"
+        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:id="@+id/connecting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/infoText"
+        android:textColor="#4FC3F7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+        Listelenen herhangi bir cihaz yoksa lütfen cihazınızı Android ayarlarıyla eşleştirin."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
